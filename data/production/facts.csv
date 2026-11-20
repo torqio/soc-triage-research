@@ -1,0 +1,7 @@
+quantity,value,paper_location
+Later tenant A alerts with no exemplar at score >= 0.60 (share),0.6559,Validation-Selected Thresholds and Later Data
+Benchmark tenant A alerts with no exemplar at score >= 0.60 (share),0.3811,Validation-Selected Thresholds and Later Data
+Decisions API repeat calls (production),3300,"Discussion and Limitations, Reproducibility"
+Decisions API repeat calls agreeing with the main run (share),1.0,"Discussion and Limitations, Reproducibility"
+Tenant A malicious test alerts marked by one vendor Response value (100% precision),7 of 17,"Data and Compared Systems, Production alerts"
+Gemini 2.5 Pro distinct verbalized confidence values per fold (maximum),6,"Results, Comparison at a Fixed Review Budget"

@@ -1,0 +1,9 @@
+sampling,loss,seeds,caught_per_seed_units,caught_per_seed_arms_file,caught_mean,caught_sd_across_seeds,fe_per_seed_units,fe_mean,fe_sd_across_seeds,n_mal_per_seed,consistent_with_arms_file
+balanced,CE,0/1/2,50/45/47,50/45/47,47.3333,2.5166,33/28/20,27,6.5574,73,True
+balanced,rho=0.9 lambda=2,0/1/2,49/46/53,49/46/53,49.3333,3.5119,33/35/26,31.3333,4.7258,73,True
+balanced,rho=0.95 lambda=5,0/1/2,48/52/54,48/52/54,51.3333,3.0551,29/44/36,36.3333,7.5056,73,True
+balanced,rho=0.99 lambda=8,0/1/2,46/48/46,46/48/46,46.6667,1.1547,30/38/31,33,4.3589,73,True
+natural,CE,0/1/2,12/12/11,12/12/11,11.6667,0.5774,2/0/3,1.6667,1.5275,73,True
+natural,rho=0.9 lambda=2,0/1/2,46/50/42,46/50/42,46,4.0000,20/45/26,30.3333,13.0512,73,True
+natural,rho=0.95 lambda=5,0/1/2,41/47/48,41/47/48,45.3333,3.7859,43/27/24,31.3333,10.2144,73,True
+natural,rho=0.99 lambda=8,0/1/2,50/43/48,50/43/48,47,3.6056,35/16/35,28.6667,10.9697,73,True

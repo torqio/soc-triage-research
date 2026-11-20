@@ -1,0 +1,33 @@
+dataset,method,auto_closed_nonmal,n_nonmal,noise_reduction,workflow_recall,misses,false_esc
+GUIDE,RiskFit,429,623,0.6886,0.9759,11,46
+GUIDE,CE,455,623,0.7303,0.9671,15,35
+GUIDE,LightGBM,463,623,0.7432,0.9320,31,39
+GUIDE,MaxSim,501,623,0.8042,0.9167,38,17
+GUIDE,kNN,479,623,0.7689,0.9539,21,28
+GUIDE,Tiny Decision,477,623,0.7657,0.9737,12,30
+GUIDE,Decisions 0-shot,0,623,0.0000,1.0000,0,497
+GUIDE,Decisions + 1 ex.,60,623,0.0963,0.9825,8,420
+GUIDE,Decisions + 5 ex.,370,623,0.5939,0.9474,24,109
+GUIDE,Decisions + 20 ex.,391,623,0.6276,0.9737,12,90
+GUIDE,Jev 0-shot,12,623,0.0193,0.9912,4,492
+GUIDE,Jev + 1 ex.,94,623,0.1509,0.9408,27,381
+GUIDE,Jev + 5 ex.,234,623,0.3756,0.9167,38,245
+GUIDE,Jev + 20 ex.,268,623,0.4302,0.9364,29,213
+GUIDE,Opus 0-shot,7,623,0.0112,0.9890,5,490
+GUIDE,Opus + 1 ex.,239,623,0.3836,0.9649,16,241
+GUIDE,CyberSecQwen-4B,0,623,0.0000,1.0000,0,502
+GUIDE,Qwen3-4B base,63,623,0.1011,0.8706,59,437
+production,RiskFit,1113,1419,0.7844,0.8767,9,28
+production,RiskFit rho=0.8,1125,1419,0.7928,0.9178,6,25
+production,RiskFit lambda=4,1116,1419,0.7865,0.8904,8,31
+production,CE,1141,1419,0.8041,0.8767,9,8
+production,Focal-Tversky,1130,1419,0.7963,0.9041,7,18
+production,MaxSim,1162,1419,0.8189,0.9041,7,4
+production,kNN (frozen),1157,1419,0.8154,0.7808,16,2
+production,LightGBM,1148,1419,0.8090,0.8219,13,6
+production,SetFit-LoRA,1165,1419,0.8210,0.7808,16,4
+production,Tiny Decision,1160,1419,0.8175,0.8630,10,5
+production,Gemini zero-shot,956,1419,0.6737,0.7123,21,181
+production,Gemini + exemplar,1099,1419,0.7745,0.8493,11,41
+production,Decisions zero-shot,183,1419,0.1290,0.9863,1,945
+production,Decisions + exemplar,977,1419,0.6885,1.0000,0,154

@@ -1,0 +1,26 @@
+# Local working area of the optional GUIDE pipeline: the dataset, rebuilt splits, retrained predictions,
+# hosted-model inputs and re-query results. GUIDE is not redistributed.
+/work/
+# Figure 1 as drawn by `python -m soctriage.analysis` (the paper's figure is in paper/source/figures/)
+/outputs/figures/
+# Never commit credentials
+.env
+*.key
+kaggle.json
+
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.DS_Store
+# LaTeX build products
+paper/source/*.aux
+paper/source/*.bbl
+paper/source/*.blg
+paper/source/*.log
+paper/source/*.out
+paper/source/*.fls
+paper/source/*.fdb_latexmk
+paper/source/main.pdf

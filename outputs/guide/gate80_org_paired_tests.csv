@@ -1,0 +1,13 @@
+local,hosted,metric,local_total,hosted_total,orgs_local_lower,orgs_local_higher,orgs_tied,wilcoxon_exact_p_two_sided,per_org_diff_local_minus_hosted
+RiskFit,Decisions + 20 ex.,misses,11,12,3,3,6,0.9688,-3 0 1 -2 1 0 0 3 -1 0 0 0
+RiskFit,Decisions + 20 ex.,false_esc,46,90,7,2,3,0.0664,-2 -23 -4 0 -10 -1 0 -6 -1 2 0 1
+CE,Decisions + 20 ex.,misses,15,12,3,3,6,0.8125,0 -1 0 -2 1 0 0 4 -1 0 0 2
+CE,Decisions + 20 ex.,false_esc,35,90,10,1,1,0.0049,-5 -23 -2 -2 -10 -1 -3 -8 -1 1 0 -1
+Tiny Decision,Decisions + 20 ex.,misses,12,12,4,4,4,1.0000,-1 -1 1 -2 1 0 0 2 -1 0 0 1
+Tiny Decision,Decisions + 20 ex.,false_esc,30,90,10,1,1,0.0049,-7 -23 -3 -4 -8 -1 -5 -8 -1 0 1 -1
+RiskFit,Decisions + 1 ex.,misses,11,8,3,6,3,0.6133,-1 1 2 -1 1 -2 0 1 1 1 0 0
+RiskFit,Decisions + 1 ex.,false_esc,46,420,12,0,0,0.0005,-14 -167 -5 -46 -29 -3 -7 -25 -32 -44 -1 -1
+RiskFit,Opus + 1 ex.,misses,11,16,6,1,5,0.1250,-1 0 1 -1 0 -1 0 0 -1 -1 0 -1
+RiskFit,Opus + 1 ex.,false_esc,46,241,11,1,0,0.0015,-4 -124 -5 -10 -16 -3 -2 -17 -4 -10 -1 1
+RiskFit,Jev + 20 ex.,misses,11,29,7,0,5,0.0156,-3 0 -4 -6 0 -1 -1 0 -1 0 0 -2
+RiskFit,Jev + 20 ex.,false_esc,46,213,9,2,1,0.0068,-2 -134 -4 -6 -6 -2 0 -12 -2 1 -1 1

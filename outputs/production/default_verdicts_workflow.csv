@@ -1,0 +1,61 @@
+method,scope,operating_point,n,n_mal,automated,automation_rate,deferred,misses,false_esc,TP,FN,FP,workflow_precision,workflow_recall,weighted_cost_c10
+RiskFit,all,"default verdict, 100% automated",1492,73,1492,1.0000,0,17,64,56,17,64,0.4667,0.7671,234
+RiskFit rho=0.8,all,"default verdict, 100% automated",1492,73,1492,1.0000,0,19,59,54,19,59,0.4779,0.7397,249
+RiskFit lambda=4,all,"default verdict, 100% automated",1492,73,1492,1.0000,0,21,62,52,21,62,0.4561,0.7123,272
+CE,all,"default verdict, 100% automated",1492,73,1492,1.0000,0,22,36,51,22,36,0.5862,0.6986,256
+CE-A100 (lambda=0),all,"default verdict, 100% automated",1492,73,1492,1.0000,0,23,28,50,23,28,0.6410,0.6849,258
+Focal-Tversky,all,"default verdict, 100% automated",1492,73,1492,1.0000,0,22,39,51,22,39,0.5667,0.6986,259
+MaxSim,all,"default verdict, 100% automated",1492,73,1492,1.0000,0,28,17,45,28,17,0.7258,0.6164,297
+kNN (frozen),all,"default verdict, 100% automated",1492,73,1492,1.0000,0,41,8,32,41,8,0.8000,0.4384,418
+LightGBM,all,"default verdict, 100% automated",1492,73,1492,1.0000,0,28,23,45,28,23,0.6618,0.6164,303
+SetFit-LoRA,all,"default verdict, 100% automated",1492,73,1492,1.0000,0,35,14,38,35,14,0.7308,0.5205,364
+Tiny Decision,all,"default verdict, 100% automated",1492,73,1492,1.0000,0,28,14,45,28,14,0.7627,0.6164,294
+Gemini zero-shot,all,"default verdict, 100% automated",1492,73,1492,1.0000,0,30,258,43,30,258,0.1429,0.5890,558
+Gemini + exemplar,all,"default verdict, 100% automated",1492,73,1492,1.0000,0,19,72,54,19,72,0.4286,0.7397,262
+Decisions zero-shot,all,"default verdict, 100% automated",1492,73,1492,1.0000,0,3,1170,70,3,1170,0.0565,0.9589,1200
+Decisions + exemplar,all,"default verdict, 100% automated",1492,73,1492,1.0000,0,2,213,71,2,213,0.2500,0.9726,233
+RiskFit,A,"default verdict, 100% automated",412,17,412,1.0000,0,3,29,14,3,29,0.3256,0.8235,59
+RiskFit rho=0.8,A,"default verdict, 100% automated",412,17,412,1.0000,0,3,29,14,3,29,0.3256,0.8235,59
+RiskFit lambda=4,A,"default verdict, 100% automated",412,17,412,1.0000,0,3,37,14,3,37,0.2745,0.8235,67
+CE,A,"default verdict, 100% automated",412,17,412,1.0000,0,3,20,14,3,20,0.4118,0.8235,50
+CE-A100 (lambda=0),A,"default verdict, 100% automated",412,17,412,1.0000,0,4,19,13,4,19,0.4062,0.7647,59
+Focal-Tversky,A,"default verdict, 100% automated",412,17,412,1.0000,0,3,21,14,3,21,0.4000,0.8235,51
+MaxSim,A,"default verdict, 100% automated",412,17,412,1.0000,0,7,7,10,7,7,0.5882,0.5882,77
+kNN (frozen),A,"default verdict, 100% automated",412,17,412,1.0000,0,11,1,6,11,1,0.8571,0.3529,111
+LightGBM,A,"default verdict, 100% automated",412,17,412,1.0000,0,7,9,10,7,9,0.5263,0.5882,79
+SetFit-LoRA,A,"default verdict, 100% automated",412,17,412,1.0000,0,10,3,7,10,3,0.7000,0.4118,103
+Tiny Decision,A,"default verdict, 100% automated",412,17,412,1.0000,0,10,1,7,10,1,0.8750,0.4118,101
+Gemini zero-shot,A,"default verdict, 100% automated",412,17,412,1.0000,0,6,39,11,6,39,0.2200,0.6471,99
+Gemini + exemplar,A,"default verdict, 100% automated",412,17,412,1.0000,0,3,6,14,3,6,0.7000,0.8235,36
+Decisions zero-shot,A,"default verdict, 100% automated",412,17,412,1.0000,0,0,306,17,0,306,0.0526,1.0000,306
+Decisions + exemplar,A,"default verdict, 100% automated",412,17,412,1.0000,0,2,18,15,2,18,0.4545,0.8824,38
+RiskFit,B,"default verdict, 100% automated",707,39,707,1.0000,0,13,28,26,13,28,0.4815,0.6667,158
+RiskFit rho=0.8,B,"default verdict, 100% automated",707,39,707,1.0000,0,15,23,24,15,23,0.5106,0.6154,173
+RiskFit lambda=4,B,"default verdict, 100% automated",707,39,707,1.0000,0,17,16,22,17,16,0.5789,0.5641,186
+CE,B,"default verdict, 100% automated",707,39,707,1.0000,0,18,8,21,18,8,0.7241,0.5385,188
+CE-A100 (lambda=0),B,"default verdict, 100% automated",707,39,707,1.0000,0,18,7,21,18,7,0.7500,0.5385,187
+Focal-Tversky,B,"default verdict, 100% automated",707,39,707,1.0000,0,18,17,21,18,17,0.5526,0.5385,197
+MaxSim,B,"default verdict, 100% automated",707,39,707,1.0000,0,19,8,20,19,8,0.7143,0.5128,198
+kNN (frozen),B,"default verdict, 100% automated",707,39,707,1.0000,0,25,5,14,25,5,0.7368,0.3590,255
+LightGBM,B,"default verdict, 100% automated",707,39,707,1.0000,0,18,7,21,18,7,0.7500,0.5385,187
+SetFit-LoRA,B,"default verdict, 100% automated",707,39,707,1.0000,0,22,8,17,22,8,0.6800,0.4359,228
+Tiny Decision,B,"default verdict, 100% automated",707,39,707,1.0000,0,14,10,25,14,10,0.7143,0.6410,150
+Gemini zero-shot,B,"default verdict, 100% automated",707,39,707,1.0000,0,15,205,24,15,205,0.1048,0.6154,355
+Gemini + exemplar,B,"default verdict, 100% automated",707,39,707,1.0000,0,12,61,27,12,61,0.3068,0.6923,181
+Decisions zero-shot,B,"default verdict, 100% automated",707,39,707,1.0000,0,0,664,39,0,664,0.0555,1.0000,664
+Decisions + exemplar,B,"default verdict, 100% automated",707,39,707,1.0000,0,0,169,39,0,169,0.1875,1.0000,169
+RiskFit,C,"default verdict, 100% automated",373,17,373,1.0000,0,1,7,16,1,7,0.6957,0.9412,17
+RiskFit rho=0.8,C,"default verdict, 100% automated",373,17,373,1.0000,0,1,7,16,1,7,0.6957,0.9412,17
+RiskFit lambda=4,C,"default verdict, 100% automated",373,17,373,1.0000,0,1,9,16,1,9,0.6400,0.9412,19
+CE,C,"default verdict, 100% automated",373,17,373,1.0000,0,1,8,16,1,8,0.6667,0.9412,18
+CE-A100 (lambda=0),C,"default verdict, 100% automated",373,17,373,1.0000,0,1,2,16,1,2,0.8889,0.9412,12
+Focal-Tversky,C,"default verdict, 100% automated",373,17,373,1.0000,0,1,1,16,1,1,0.9412,0.9412,11
+MaxSim,C,"default verdict, 100% automated",373,17,373,1.0000,0,2,2,15,2,2,0.8824,0.8824,22
+kNN (frozen),C,"default verdict, 100% automated",373,17,373,1.0000,0,5,2,12,5,2,0.8571,0.7059,52
+LightGBM,C,"default verdict, 100% automated",373,17,373,1.0000,0,3,7,14,3,7,0.6667,0.8235,37
+SetFit-LoRA,C,"default verdict, 100% automated",373,17,373,1.0000,0,3,3,14,3,3,0.8235,0.8235,33
+Tiny Decision,C,"default verdict, 100% automated",373,17,373,1.0000,0,4,3,13,4,3,0.8125,0.7647,43
+Gemini zero-shot,C,"default verdict, 100% automated",373,17,373,1.0000,0,9,14,8,9,14,0.3636,0.4706,104
+Gemini + exemplar,C,"default verdict, 100% automated",373,17,373,1.0000,0,4,5,13,4,5,0.7222,0.7647,45
+Decisions zero-shot,C,"default verdict, 100% automated",373,17,373,1.0000,0,3,200,14,3,200,0.0654,0.8235,230
+Decisions + exemplar,C,"default verdict, 100% automated",373,17,373,1.0000,0,0,26,17,0,26,0.3953,1.0000,26
