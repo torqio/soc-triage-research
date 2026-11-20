@@ -1,0 +1,37 @@
+coverage,method,misses,false_esc,paper,match
+0.8000,RiskFit,11,46,11/46,True
+0.8000,CE,15,35,15/35,True
+0.8000,LightGBM,31,39,31/39,True
+0.8000,MaxSim,38,17,38/17,True
+0.8000,kNN,21,28,21/28,True
+0.8000,Tiny Decision,12,30,12/30,True
+0.8000,Decisions 0-shot,0,497,0/497,True
+0.8000,Decisions + 1 ex.,8,420,8/420,True
+0.8000,Decisions + 5 ex.,24,109,24/109,True
+0.8000,Decisions + 20 ex.,12,90,12/90,True
+0.8000,Jev 0-shot,4,492,4/492,True
+0.8000,Jev + 1 ex.,27,381,27/381,True
+0.8000,Jev + 5 ex.,38,245,38/245,True
+0.8000,Jev + 20 ex.,29,213,29/213,True
+0.8000,Opus 0-shot,5,490,5/490,True
+0.8000,Opus + 1 ex.,16,241,16/241,True
+0.8000,CyberSecQwen-4B,0,502,0/502,True
+0.8000,Qwen3-4B base,59,437,59/437,True
+1.0000,RiskFit,25,79,25/79,True
+1.0000,CE,27,70,,
+1.0000,LightGBM,61,65,,
+1.0000,MaxSim,76,35,,
+1.0000,kNN,41,53,,
+1.0000,Tiny Decision,33,50,,
+1.0000,Decisions 0-shot,4,620,,
+1.0000,Decisions + 1 ex.,24,500,24/500,True
+1.0000,Decisions + 5 ex.,40,159,,
+1.0000,Decisions + 20 ex.,22,126,,
+1.0000,Jev 0-shot,26,581,,
+1.0000,Jev + 1 ex.,49,448,,
+1.0000,Jev + 5 ex.,57,292,,
+1.0000,Jev + 20 ex.,46,265,,
+1.0000,Opus 0-shot,32,580,,
+1.0000,Opus + 1 ex.,40,261,,
+1.0000,CyberSecQwen-4B,2,623,,
+1.0000,Qwen3-4B base,103,499,,

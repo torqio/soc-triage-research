@@ -1,0 +1,101 @@
+method,score,operating_point,selection,scope,caught,n_mal,false_esc,n_nonmal,cost_c10
+RiskFit,p(malicious),RiskFit default FPR,validation-tuned per tenant-fold,all,56,73,93,1419,263
+RiskFit,p(malicious),RiskFit default FPR,validation-tuned per tenant-fold,A,14,17,59,395,89
+RiskFit,p(malicious),RiskFit default FPR,validation-tuned per tenant-fold,B,26,39,27,668,157
+RiskFit,p(malicious),RiskFit default FPR,validation-tuned per tenant-fold,C,16,17,7,356,17
+RiskFit,p(malicious),FPR 5%,validation-tuned per tenant-fold,all,56,73,113,1419,283
+RiskFit,p(malicious),FPR 5%,validation-tuned per tenant-fold,A,13,17,48,395,88
+RiskFit,p(malicious),FPR 5%,validation-tuned per tenant-fold,B,27,39,56,668,176
+RiskFit,p(malicious),FPR 5%,validation-tuned per tenant-fold,C,16,17,9,356,19
+RiskFit rho=0.8,p(malicious),RiskFit default FPR,validation-tuned per tenant-fold,all,57,73,99,1419,259
+RiskFit rho=0.8,p(malicious),RiskFit default FPR,validation-tuned per tenant-fold,A,14,17,54,395,84
+RiskFit rho=0.8,p(malicious),RiskFit default FPR,validation-tuned per tenant-fold,B,27,39,38,668,158
+RiskFit rho=0.8,p(malicious),RiskFit default FPR,validation-tuned per tenant-fold,C,16,17,7,356,17
+RiskFit rho=0.8,p(malicious),FPR 5%,validation-tuned per tenant-fold,all,57,73,96,1419,256
+RiskFit rho=0.8,p(malicious),FPR 5%,validation-tuned per tenant-fold,A,14,17,43,395,73
+RiskFit rho=0.8,p(malicious),FPR 5%,validation-tuned per tenant-fold,B,27,39,40,668,160
+RiskFit rho=0.8,p(malicious),FPR 5%,validation-tuned per tenant-fold,C,16,17,13,356,23
+RiskFit lambda=4,p(malicious),RiskFit default FPR,validation-tuned per tenant-fold,all,56,73,98,1419,268
+RiskFit lambda=4,p(malicious),RiskFit default FPR,validation-tuned per tenant-fold,A,14,17,54,395,84
+RiskFit lambda=4,p(malicious),RiskFit default FPR,validation-tuned per tenant-fold,B,26,39,33,668,163
+RiskFit lambda=4,p(malicious),RiskFit default FPR,validation-tuned per tenant-fold,C,16,17,11,356,21
+RiskFit lambda=4,p(malicious),FPR 5%,validation-tuned per tenant-fold,all,55,73,92,1419,272
+RiskFit lambda=4,p(malicious),FPR 5%,validation-tuned per tenant-fold,A,13,17,38,395,78
+RiskFit lambda=4,p(malicious),FPR 5%,validation-tuned per tenant-fold,B,26,39,40,668,170
+RiskFit lambda=4,p(malicious),FPR 5%,validation-tuned per tenant-fold,C,16,17,14,356,24
+CE,p(malicious),RiskFit default FPR,validation-tuned per tenant-fold,all,56,73,79,1419,249
+CE,p(malicious),RiskFit default FPR,validation-tuned per tenant-fold,A,14,17,46,395,76
+CE,p(malicious),RiskFit default FPR,validation-tuned per tenant-fold,B,26,39,24,668,154
+CE,p(malicious),RiskFit default FPR,validation-tuned per tenant-fold,C,16,17,9,356,19
+CE,p(malicious),FPR 5%,validation-tuned per tenant-fold,all,59,73,87,1419,227
+CE,p(malicious),FPR 5%,validation-tuned per tenant-fold,A,14,17,45,395,75
+CE,p(malicious),FPR 5%,validation-tuned per tenant-fold,B,29,39,31,668,131
+CE,p(malicious),FPR 5%,validation-tuned per tenant-fold,C,16,17,11,356,21
+Focal-Tversky,p(malicious),RiskFit default FPR,validation-tuned per tenant-fold,all,56,73,86,1419,256
+Focal-Tversky,p(malicious),RiskFit default FPR,validation-tuned per tenant-fold,A,14,17,45,395,75
+Focal-Tversky,p(malicious),RiskFit default FPR,validation-tuned per tenant-fold,B,26,39,39,668,169
+Focal-Tversky,p(malicious),RiskFit default FPR,validation-tuned per tenant-fold,C,16,17,2,356,12
+Focal-Tversky,p(malicious),FPR 5%,validation-tuned per tenant-fold,all,57,73,82,1419,242
+Focal-Tversky,p(malicious),FPR 5%,validation-tuned per tenant-fold,A,14,17,33,395,63
+Focal-Tversky,p(malicious),FPR 5%,validation-tuned per tenant-fold,B,27,39,42,668,162
+Focal-Tversky,p(malicious),FPR 5%,validation-tuned per tenant-fold,C,16,17,7,356,17
+MaxSim,p(malicious),RiskFit default FPR,validation-tuned per tenant-fold,all,56,73,72,1419,242
+MaxSim,p(malicious),RiskFit default FPR,validation-tuned per tenant-fold,A,13,17,39,395,79
+MaxSim,p(malicious),RiskFit default FPR,validation-tuned per tenant-fold,B,27,39,24,668,144
+MaxSim,p(malicious),RiskFit default FPR,validation-tuned per tenant-fold,C,16,17,9,356,19
+MaxSim,p(malicious),FPR 5%,validation-tuned per tenant-fold,all,51,73,95,1419,315
+MaxSim,p(malicious),FPR 5%,validation-tuned per tenant-fold,A,13,17,31,395,71
+MaxSim,p(malicious),FPR 5%,validation-tuned per tenant-fold,B,22,39,32,668,202
+MaxSim,p(malicious),FPR 5%,validation-tuned per tenant-fold,C,16,17,32,356,42
+kNN (frozen),p(malicious),RiskFit default FPR,validation-tuned per tenant-fold,all,55,73,48,1419,228
+kNN (frozen),p(malicious),RiskFit default FPR,validation-tuned per tenant-fold,A,15,17,19,395,39
+kNN (frozen),p(malicious),RiskFit default FPR,validation-tuned per tenant-fold,B,24,39,23,668,173
+kNN (frozen),p(malicious),RiskFit default FPR,validation-tuned per tenant-fold,C,16,17,6,356,16
+kNN (frozen),p(malicious),FPR 5%,validation-tuned per tenant-fold,all,58,73,54,1419,204
+kNN (frozen),p(malicious),FPR 5%,validation-tuned per tenant-fold,A,16,17,22,395,32
+kNN (frozen),p(malicious),FPR 5%,validation-tuned per tenant-fold,B,26,39,25,668,155
+kNN (frozen),p(malicious),FPR 5%,validation-tuned per tenant-fold,C,16,17,7,356,17
+LightGBM,p(malicious),RiskFit default FPR,validation-tuned per tenant-fold,all,52,73,108,1419,318
+LightGBM,p(malicious),RiskFit default FPR,validation-tuned per tenant-fold,A,14,17,60,395,90
+LightGBM,p(malicious),RiskFit default FPR,validation-tuned per tenant-fold,B,26,39,45,668,175
+LightGBM,p(malicious),RiskFit default FPR,validation-tuned per tenant-fold,C,12,17,3,356,53
+LightGBM,p(malicious),FPR 5%,validation-tuned per tenant-fold,all,56,73,119,1419,289
+LightGBM,p(malicious),FPR 5%,validation-tuned per tenant-fold,A,14,17,51,395,81
+LightGBM,p(malicious),FPR 5%,validation-tuned per tenant-fold,B,27,39,49,668,169
+LightGBM,p(malicious),FPR 5%,validation-tuned per tenant-fold,C,15,17,19,356,39
+SetFit-LoRA,p(malicious),RiskFit default FPR,validation-tuned per tenant-fold,all,52,73,70,1419,280
+SetFit-LoRA,p(malicious),RiskFit default FPR,validation-tuned per tenant-fold,A,13,17,37,395,77
+SetFit-LoRA,p(malicious),RiskFit default FPR,validation-tuned per tenant-fold,B,23,39,29,668,189
+SetFit-LoRA,p(malicious),RiskFit default FPR,validation-tuned per tenant-fold,C,16,17,4,356,14
+SetFit-LoRA,p(malicious),FPR 5%,validation-tuned per tenant-fold,all,55,73,59,1419,239
+SetFit-LoRA,p(malicious),FPR 5%,validation-tuned per tenant-fold,A,13,17,25,395,65
+SetFit-LoRA,p(malicious),FPR 5%,validation-tuned per tenant-fold,B,26,39,28,668,158
+SetFit-LoRA,p(malicious),FPR 5%,validation-tuned per tenant-fold,C,16,17,6,356,16
+Tiny Decision,p(malicious),RiskFit default FPR,validation-tuned per tenant-fold,all,56,73,78,1419,248
+Tiny Decision,p(malicious),RiskFit default FPR,validation-tuned per tenant-fold,A,11,17,42,395,102
+Tiny Decision,p(malicious),RiskFit default FPR,validation-tuned per tenant-fold,B,29,39,27,668,127
+Tiny Decision,p(malicious),RiskFit default FPR,validation-tuned per tenant-fold,C,16,17,9,356,19
+Tiny Decision,p(malicious),FPR 5%,validation-tuned per tenant-fold,all,58,73,73,1419,223
+Tiny Decision,p(malicious),FPR 5%,validation-tuned per tenant-fold,A,13,17,34,395,74
+Tiny Decision,p(malicious),FPR 5%,validation-tuned per tenant-fold,B,29,39,27,668,127
+Tiny Decision,p(malicious),FPR 5%,validation-tuned per tenant-fold,C,16,17,12,356,22
+Decisions zero-shot,choice p(malicious),RiskFit default FPR,validation-tuned per tenant-fold,all,21,73,58,1419,578
+Decisions zero-shot,choice p(malicious),RiskFit default FPR,validation-tuned per tenant-fold,A,11,17,27,395,87
+Decisions zero-shot,choice p(malicious),RiskFit default FPR,validation-tuned per tenant-fold,B,5,39,26,668,366
+Decisions zero-shot,choice p(malicious),RiskFit default FPR,validation-tuned per tenant-fold,C,5,17,5,356,125
+Decisions zero-shot,choice p(malicious),FPR 5%,validation-tuned per tenant-fold,all,26,73,72,1419,542
+Decisions zero-shot,choice p(malicious),FPR 5%,validation-tuned per tenant-fold,A,10,17,30,395,100
+Decisions zero-shot,choice p(malicious),FPR 5%,validation-tuned per tenant-fold,B,7,39,32,668,352
+Decisions zero-shot,choice p(malicious),FPR 5%,validation-tuned per tenant-fold,C,9,17,10,356,90
+Decisions zero-shot,predicate p(malicious),RiskFit default FPR,validation-tuned per tenant-fold,all,27,73,79,1419,539
+Decisions zero-shot,predicate p(malicious),RiskFit default FPR,validation-tuned per tenant-fold,A,12,17,28,395,78
+Decisions zero-shot,predicate p(malicious),RiskFit default FPR,validation-tuned per tenant-fold,B,12,39,50,668,320
+Decisions zero-shot,predicate p(malicious),RiskFit default FPR,validation-tuned per tenant-fold,C,3,17,1,356,141
+Decisions zero-shot,predicate p(malicious),FPR 5%,validation-tuned per tenant-fold,all,37,73,96,1419,456
+Decisions zero-shot,predicate p(malicious),FPR 5%,validation-tuned per tenant-fold,A,11,17,25,395,85
+Decisions zero-shot,predicate p(malicious),FPR 5%,validation-tuned per tenant-fold,B,19,39,66,668,266
+Decisions zero-shot,predicate p(malicious),FPR 5%,validation-tuned per tenant-fold,C,7,17,5,356,105
+Decisions + exemplar,choice p(malicious),FPR 5%,validation-tuned per tenant-fold,all,63,73,99,1419,199
+Decisions + exemplar,choice p(malicious),RiskFit default FPR,validation-tuned per tenant-fold,all,51,73,74,1419,294
+Decisions + exemplar,predicate p(malicious),FPR 5%,validation-tuned per tenant-fold,all,59,73,80,1419,220
+Decisions + exemplar,predicate p(malicious),RiskFit default FPR,validation-tuned per tenant-fold,all,54,73,73,1419,263

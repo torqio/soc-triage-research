@@ -1,0 +1,33 @@
+method,scope,gate,seed,n,n_mal,automated,automation_rate,deferred,misses,false_esc,TP,FN,FP,workflow_precision,workflow_recall,weighted_cost_c10,misses_ci95
+RiskFit,all,deployable (tau at 80% validation coverage),42,1492,73,1111,0.7446,381,6,26,67,6,26,0.7204,0.9178,86,2-11
+RiskFit rho=0.8,all,deployable (tau at 80% validation coverage),42,1492,73,1122,0.7520,370,5,21,68,5,21,0.7640,0.9315,71,1-10
+CE,all,deployable (tau at 80% validation coverage),42,1492,73,1163,0.7795,329,9,8,64,9,8,0.8889,0.8767,98,4-15
+MaxSim,all,deployable (tau at 80% validation coverage),42,1492,73,1174,0.7869,318,7,4,66,7,4,0.9429,0.9041,74,2-13
+kNN (frozen),all,deployable (tau at 80% validation coverage),42,1492,73,1260,0.8445,232,15,3,58,15,3,0.9508,0.7945,153,8-23
+LightGBM,all,deployable (tau at 80% validation coverage),42,1492,73,1156,0.7748,336,14,4,59,14,4,0.9365,0.8082,144,7-22
+Decisions zero-shot,all,deployable (tau at 80% validation coverage),42,1492,73,1229,0.8237,263,1,967,72,1,967,0.0693,0.9863,977,0-3
+Decisions + exemplar,all,deployable (tau at 80% validation coverage),42,1492,73,1219,0.8170,273,0,155,73,0,155,0.3202,1.0000,155,0-0
+RiskFit,A,,,,,,0.6772,,0,,,,,,,,
+RiskFit rho=0.8,A,,,,,,0.7015,,0,,,,,,,,
+CE,A,,,,,,0.7476,,1,,,,,,,,
+MaxSim,A,,,,,,0.7791,,1,,,,,,,,
+kNN (frozen),A,,,,,,0.8786,,1,,,,,,,,
+LightGBM,A,,,,,,0.7209,,2,,,,,,,,
+Decisions zero-shot,A,,,,,,,,0,,,,,,,,
+Decisions + exemplar,A,,,,,,,,0,,,,,,,,
+RiskFit,B,,,,,,0.7468,,6,,,,,,,,
+RiskFit rho=0.8,B,,,,,,0.7553,,5,,,,,,,,
+CE,B,,,,,,0.7793,,8,,,,,,,,
+MaxSim,B,,,,,,0.7822,,5,,,,,,,,
+kNN (frozen),B,,,,,,0.7709,,14,,,,,,,,
+LightGBM,B,,,,,,0.7836,,12,,,,,,,,
+Decisions zero-shot,B,,,,,,,,0,,,,,,,,
+Decisions + exemplar,B,,,,,,,,0,,,,,,,,
+RiskFit,C,,,,,,0.815,,0,,,,,,,,
+RiskFit rho=0.8,C,,,,,,0.8016,,0,,,,,,,,
+CE,C,,,,,,0.815,,0,,,,,,,,
+MaxSim,C,,,,,,0.8043,,1,,,,,,,,
+kNN (frozen),C,,,,,,0.9464,,0,,,,,,,,
+LightGBM,C,,,,,,0.8177,,0,,,,,,,,
+Decisions zero-shot,C,,,,,,,,1,,,,,,,,
+Decisions + exemplar,C,,,,,,,,0,,,,,,,,

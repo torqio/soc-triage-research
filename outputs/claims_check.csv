@@ -1,0 +1,287 @@
+claim,printed,computed,source,row,status,found_in_tex
+Data: production alerts,"We use 1,492 alerts","We use 1,492 alerts",data:data_summary.csv,tenant=all,ok,True
+Data: per-tenant counts,"(412, 707 and 373 alerts; 17, 39 and 17 malicious)","(412, 707 and 373 alerts; 17, 39 and 17 malicious)",data:data_summary.csv,,ok,True
+Data: corrections,528,528,data:data_summary.csv,tenant=all,ok,True
+Data: corrections to malicious,only six of them to malicious,only six of them to malicious,data:data_summary.csv,tenant=all,ok,True
+Data: uncorrected equal to LLM verdict,943 of the 964 uncorrected labels,943 of the 964 uncorrected labels,data:data_summary.csv,tenant=all,ok,True
+Data: tenant A exact duplicates,33.5\%,33.5\%,data:near_duplicates.csv,tenant=A; test_alerts=all,ok,True
+Data: Response field,identifies 7 of the 17 malicious alerts,identifies 7 of the 17 malicious alerts,data:facts.csv,quantity=Tenant A malicious test alerts marked by one vendor Response value (100% precision),ok,True
+Data: later tenant A alerts,433 further alerts (11 malicious),433 further alerts (11 malicious),data:later_alerts_tenantA_full_coverage.csv,method=RiskFit,ok,True
+GUIDE: incidents,"71,576","71,576",guide/task_label_conflicts.csv,level=all; org=all; split=all,ok,True
+GUIDE: prompts,"7,160","7,160",guide/task_label_conflicts.csv,level=all; org=all; split=all,ok,True
+GUIDE: mixed prompts,414 prompts (5.8\%),414 prompts (5.8\%),guide/task_label_conflicts.csv,level=all; org=all; split=all,ok,True
+GUIDE: conflicting incidents,3.2\%,3.2\%,guide/task_label_conflicts.csv,level=all; org=all; split=all,ok,True
+GUIDE: test set,"1,079 prompts (456 malicious, 623 non-malicious)","1,079 prompts (456 malicious, 623 non-malicious)",guide/gate80_workflow.csv,method=RiskFit,ok,True
+GUIDE: test incidents,"9,722","9,722",guide/task_label_conflicts.csv,level=all; org=all; split=test,ok,True
+GUIDE: 11 largest prompts,52\%,52\%,guide/incident_concentration.csv,quantity=share of test incidents in the 11 largest test prompts (1%),ok,True
+Table 2 GUIDE RiskFit misses,11,11,guide/gate80_workflow.csv,method=RiskFit,ok,True
+Table 2 GUIDE RiskFit FE,46,46,guide/gate80_workflow.csv,method=RiskFit,ok,True
+Table 2 GUIDE RiskFit workflow precision,.906,.906,guide/gate80_workflow.csv,method=RiskFit,ok,True
+Table 2 GUIDE RiskFit workflow recall,.976,.976,guide/gate80_workflow.csv,method=RiskFit,ok,True
+Table 2 GUIDE CE misses,15,15,guide/gate80_workflow.csv,method=CE,ok,True
+Table 2 GUIDE CE FE,35,35,guide/gate80_workflow.csv,method=CE,ok,True
+Table 2 GUIDE CE workflow precision,.926,.926,guide/gate80_workflow.csv,method=CE,ok,True
+Table 2 GUIDE CE workflow recall,.967,.967,guide/gate80_workflow.csv,method=CE,ok,True
+Table 2 GUIDE Tiny Decision misses,12,12,guide/gate80_workflow.csv,method=Tiny Decision,ok,True
+Table 2 GUIDE Tiny Decision FE,30,30,guide/gate80_workflow.csv,method=Tiny Decision,ok,True
+Table 2 GUIDE Tiny Decision workflow precision,.937,.937,guide/gate80_workflow.csv,method=Tiny Decision,ok,True
+Table 2 GUIDE Tiny Decision workflow recall,.974,.974,guide/gate80_workflow.csv,method=Tiny Decision,ok,True
+Table 2 GUIDE kNN misses,21,21,guide/gate80_workflow.csv,method=kNN,ok,True
+Table 2 GUIDE kNN FE,28,28,guide/gate80_workflow.csv,method=kNN,ok,True
+Table 2 GUIDE kNN workflow precision,.940,.940,guide/gate80_workflow.csv,method=kNN,ok,True
+Table 2 GUIDE kNN workflow recall,.954,.954,guide/gate80_workflow.csv,method=kNN,ok,True
+Table 2 GUIDE LightGBM misses,31,31,guide/gate80_workflow.csv,method=LightGBM,ok,True
+Table 2 GUIDE LightGBM FE,39,39,guide/gate80_workflow.csv,method=LightGBM,ok,True
+Table 2 GUIDE LightGBM workflow precision,.916,.916,guide/gate80_workflow.csv,method=LightGBM,ok,True
+Table 2 GUIDE LightGBM workflow recall,.932,.932,guide/gate80_workflow.csv,method=LightGBM,ok,True
+Table 2 GUIDE MaxSim misses,38,38,guide/gate80_workflow.csv,method=MaxSim,ok,True
+Table 2 GUIDE MaxSim FE,17,17,guide/gate80_workflow.csv,method=MaxSim,ok,True
+Table 2 GUIDE MaxSim workflow precision,.961,.961,guide/gate80_workflow.csv,method=MaxSim,ok,True
+Table 2 GUIDE MaxSim workflow recall,.917,.917,guide/gate80_workflow.csv,method=MaxSim,ok,True
+Table 2 GUIDE Decisions 0-shot misses,0,0,guide/gate80_workflow.csv,method=Decisions 0-shot,ok,True
+Table 2 GUIDE Decisions 0-shot FE,497,497,guide/gate80_workflow.csv,method=Decisions 0-shot,ok,True
+Table 2 GUIDE Decisions 0-shot workflow precision,.478,.478,guide/gate80_workflow.csv,method=Decisions 0-shot,ok,True
+Table 2 GUIDE Decisions 0-shot workflow recall,1.000,1.000,guide/gate80_workflow.csv,method=Decisions 0-shot,ok,True
+Table 2 GUIDE Decisions + 1 ex. misses,8,8,guide/gate80_workflow.csv,method=Decisions + 1 ex.,ok,True
+Table 2 GUIDE Decisions + 1 ex. FE,420,420,guide/gate80_workflow.csv,method=Decisions + 1 ex.,ok,True
+Table 2 GUIDE Decisions + 1 ex. workflow precision,.516,.516,guide/gate80_workflow.csv,method=Decisions + 1 ex.,ok,True
+Table 2 GUIDE Decisions + 1 ex. workflow recall,.982,.982,guide/gate80_workflow.csv,method=Decisions + 1 ex.,ok,True
+Table 2 GUIDE Decisions + 5 ex. misses,24,24,guide/gate80_workflow.csv,method=Decisions + 5 ex.,ok,True
+Table 2 GUIDE Decisions + 5 ex. FE,109,109,guide/gate80_workflow.csv,method=Decisions + 5 ex.,ok,True
+Table 2 GUIDE Decisions + 5 ex. workflow precision,.799,.799,guide/gate80_workflow.csv,method=Decisions + 5 ex.,ok,True
+Table 2 GUIDE Decisions + 5 ex. workflow recall,.947,.947,guide/gate80_workflow.csv,method=Decisions + 5 ex.,ok,True
+Table 2 GUIDE Decisions + 20 ex. misses,12,12,guide/gate80_workflow.csv,method=Decisions + 20 ex.,ok,True
+Table 2 GUIDE Decisions + 20 ex. FE,90,90,guide/gate80_workflow.csv,method=Decisions + 20 ex.,ok,True
+Table 2 GUIDE Decisions + 20 ex. workflow precision,.831,.831,guide/gate80_workflow.csv,method=Decisions + 20 ex.,ok,True
+Table 2 GUIDE Decisions + 20 ex. workflow recall,.974,.974,guide/gate80_workflow.csv,method=Decisions + 20 ex.,ok,True
+Table 2 GUIDE Jev + 20 ex. misses,29,29,guide/gate80_workflow.csv,method=Jev + 20 ex.,ok,True
+Table 2 GUIDE Jev + 20 ex. FE,213,213,guide/gate80_workflow.csv,method=Jev + 20 ex.,ok,True
+Table 2 GUIDE Jev + 20 ex. workflow precision,.667,.667,guide/gate80_workflow.csv,method=Jev + 20 ex.,ok,True
+Table 2 GUIDE Jev + 20 ex. workflow recall,.936,.936,guide/gate80_workflow.csv,method=Jev + 20 ex.,ok,True
+Table 2 GUIDE Opus + 1 ex. misses,16,16,guide/gate80_workflow.csv,method=Opus + 1 ex.,ok,True
+Table 2 GUIDE Opus + 1 ex. FE,241,241,guide/gate80_workflow.csv,method=Opus + 1 ex.,ok,True
+Table 2 GUIDE Opus + 1 ex. workflow precision,.646,.646,guide/gate80_workflow.csv,method=Opus + 1 ex.,ok,True
+Table 2 GUIDE Opus + 1 ex. workflow recall,.965,.965,guide/gate80_workflow.csv,method=Opus + 1 ex.,ok,True
+Table 2 GUIDE CyberSecQwen-4B misses,0,0,guide/gate80_workflow.csv,method=CyberSecQwen-4B,ok,True
+Table 2 GUIDE CyberSecQwen-4B FE,502,502,guide/gate80_workflow.csv,method=CyberSecQwen-4B,ok,True
+Table 2 GUIDE CyberSecQwen-4B workflow precision,.476,.476,guide/gate80_workflow.csv,method=CyberSecQwen-4B,ok,True
+Table 2 GUIDE CyberSecQwen-4B workflow recall,1.000,1.000,guide/gate80_workflow.csv,method=CyberSecQwen-4B,ok,True
+Table 2 GUIDE automated,868,868,guide/gate80_workflow.csv,method=RiskFit,ok,True
+Table 2 GUIDE automation rate,80.4\%,80.4\%,guide/gate80_workflow.csv,method=RiskFit,ok,True
+Table 2 kNN tie range,19--21,19--21,guide/coverage_sweep.csv,method=kNN; target_coverage=0.8000,ok,True
+Table 2 Opus tie range (misses),10--21,10--21,guide/coverage_sweep.csv,method=Opus + 1 ex.; target_coverage=0.8000,ok,True
+Table 2 Opus tie range (FE),236--251,236--251,guide/coverage_sweep.csv,method=Opus + 1 ex.; target_coverage=0.8000,ok,True
+Table 2 production RiskFit misses,9,9,production/gate80_workflow.csv,method=RiskFit; scope=all,ok,True
+Table 2 production RiskFit FE,28,28,production/gate80_workflow.csv,method=RiskFit; scope=all,ok,True
+Table 2 production RiskFit workflow precision,.696,.696,production/gate80_workflow.csv,method=RiskFit; scope=all,ok,True
+Table 2 production RiskFit workflow recall,.877,.877,production/gate80_workflow.csv,method=RiskFit; scope=all,ok,True
+Table 2 production CE misses,9,9,production/gate80_workflow.csv,method=CE; scope=all,ok,True
+Table 2 production CE FE,8,8,production/gate80_workflow.csv,method=CE; scope=all,ok,True
+Table 2 production CE workflow precision,.889,.889,production/gate80_workflow.csv,method=CE; scope=all,ok,True
+Table 2 production CE workflow recall,.877,.877,production/gate80_workflow.csv,method=CE; scope=all,ok,True
+Table 2 production Tiny Decision misses,10,10,production/gate80_workflow.csv,method=Tiny Decision; scope=all,ok,True
+Table 2 production Tiny Decision FE,5,5,production/gate80_workflow.csv,method=Tiny Decision; scope=all,ok,True
+Table 2 production Tiny Decision workflow precision,.926,.926,production/gate80_workflow.csv,method=Tiny Decision; scope=all,ok,True
+Table 2 production Tiny Decision workflow recall,.863,.863,production/gate80_workflow.csv,method=Tiny Decision; scope=all,ok,True
+Table 2 production kNN (frozen) misses,16,16,production/gate80_workflow.csv,method=kNN (frozen); scope=all,ok,True
+Table 2 production kNN (frozen) FE,2,2,production/gate80_workflow.csv,method=kNN (frozen); scope=all,ok,True
+Table 2 production kNN (frozen) workflow precision,.966,.966,production/gate80_workflow.csv,method=kNN (frozen); scope=all,ok,True
+Table 2 production kNN (frozen) workflow recall,.781,.781,production/gate80_workflow.csv,method=kNN (frozen); scope=all,ok,True
+Table 2 production LightGBM misses,13,13,production/gate80_workflow.csv,method=LightGBM; scope=all,ok,True
+Table 2 production LightGBM FE,6,6,production/gate80_workflow.csv,method=LightGBM; scope=all,ok,True
+Table 2 production LightGBM workflow precision,.909,.909,production/gate80_workflow.csv,method=LightGBM; scope=all,ok,True
+Table 2 production LightGBM workflow recall,.822,.822,production/gate80_workflow.csv,method=LightGBM; scope=all,ok,True
+Table 2 production MaxSim misses,7,7,production/gate80_workflow.csv,method=MaxSim; scope=all,ok,True
+Table 2 production MaxSim FE,4,4,production/gate80_workflow.csv,method=MaxSim; scope=all,ok,True
+Table 2 production MaxSim workflow precision,.943,.943,production/gate80_workflow.csv,method=MaxSim; scope=all,ok,True
+Table 2 production MaxSim workflow recall,.904,.904,production/gate80_workflow.csv,method=MaxSim; scope=all,ok,True
+Table 2 production Decisions zero-shot misses,1,1,production/gate80_workflow.csv,method=Decisions zero-shot; scope=all,ok,True
+Table 2 production Decisions zero-shot FE,945,945,production/gate80_workflow.csv,method=Decisions zero-shot; scope=all,ok,True
+Table 2 production Decisions zero-shot workflow precision,.071,.071,production/gate80_workflow.csv,method=Decisions zero-shot; scope=all,ok,True
+Table 2 production Decisions zero-shot workflow recall,.986,.986,production/gate80_workflow.csv,method=Decisions zero-shot; scope=all,ok,True
+Table 2 production Decisions + exemplar misses,0,0,production/gate80_workflow.csv,method=Decisions + exemplar; scope=all,ok,True
+Table 2 production Decisions + exemplar FE,154,154,production/gate80_workflow.csv,method=Decisions + exemplar; scope=all,ok,True
+Table 2 production Decisions + exemplar workflow precision,.322,.322,production/gate80_workflow.csv,method=Decisions + exemplar; scope=all,ok,True
+Table 2 production Decisions + exemplar workflow recall,1.000,1.000,production/gate80_workflow.csv,method=Decisions + exemplar; scope=all,ok,True
+Table 2 production Gemini + exemplar misses,11,11,production/gate80_workflow.csv,method=Gemini + exemplar; scope=all,ok,True
+Table 2 production Gemini + exemplar FE,41,41,production/gate80_workflow.csv,method=Gemini + exemplar; scope=all,ok,True
+Table 2 production Gemini + exemplar workflow precision,.602,.602,production/gate80_workflow.csv,method=Gemini + exemplar; scope=all,ok,True
+Table 2 production Gemini + exemplar workflow recall,.849,.849,production/gate80_workflow.csv,method=Gemini + exemplar; scope=all,ok,True
+Table 2 production automated,"1,197","1,197",production/gate80_workflow.csv,method=RiskFit; scope=all,ok,True
+Table 2 production automation rate,80.2\%,80.2\%,production/gate80_workflow.csv,method=RiskFit; scope=all,ok,True
+GUIDE text: hosted <=1 ex. and CyberSecQwen misses,missed 0 to 16 malicious prompts,missed 0 to 16 malicious prompts,guide/gate80_workflow.csv,,ok,True
+GUIDE text: Jev + 1 ex. misses,(Jev with one exemplar: 27),(Jev with one exemplar: 27),guide/gate80_workflow.csv,method=Jev + 1 ex.,ok,True
+GUIDE text: hosted <=1 ex. and CyberSecQwen FE,escalated 241 to 502,escalated 241 to 502,guide/gate80_workflow.csv,,ok,True
+GUIDE text: hosted <=1 ex. precision,(workflow precision .48--.65),(workflow precision .48--.65),guide/gate80_workflow.csv,,ok,True
+GUIDE text: RiskFit vs D20 misses by organization,"RiskFit fewer in 3 organizations, more in 3, tied in 6","RiskFit fewer in 3 organizations, more in 3, tied in 6",guide/gate80_org_paired_tests.csv,local=RiskFit; hosted=Decisions + 20 ex.; metric=misses,ok,True
+GUIDE text: RiskFit vs D20 misses p,0.97,0.97,guide/gate80_org_paired_tests.csv,local=RiskFit; hosted=Decisions + 20 ex.; metric=misses,ok,True
+GUIDE text: CE vs D20 FE organizations,10 of 12,10 of 12,guide/gate80_org_paired_tests.csv,local=CE; hosted=Decisions + 20 ex.; metric=false_esc,ok,True
+GUIDE text: Tiny vs D20 FE organizations,10 of 12,10 of 12,guide/gate80_org_paired_tests.csv,local=Tiny Decision; hosted=Decisions + 20 ex.; metric=false_esc,ok,True
+GUIDE text: CE vs D20 FE p,0.005,0.005,guide/gate80_org_paired_tests.csv,local=CE; hosted=Decisions + 20 ex.; metric=false_esc,ok,True
+GUIDE text: Tiny vs D20 FE p,0.005,0.005,guide/gate80_org_paired_tests.csv,local=Tiny Decision; hosted=Decisions + 20 ex.; metric=false_esc,ok,True
+GUIDE text: RiskFit vs D20 FE p,0.066,0.066,guide/gate80_org_paired_tests.csv,local=RiskFit; hosted=Decisions + 20 ex.; metric=false_esc,ok,True
+GUIDE text: RiskFit vs D20 FE organizations,"7 lower, 2 higher, 3 tied","7 lower, 2 higher, 3 tied",guide/gate80_org_paired_tests.csv,local=RiskFit; hosted=Decisions + 20 ex.; metric=false_esc,ok,True
+GUIDE text: bootstrap RiskFit recall,.948--.991,.948--.991,guide/gate80_cluster_bootstrap.csv,method=RiskFit,ok,True
+GUIDE text: bootstrap RiskFit FE,21--71,21--71,guide/gate80_cluster_bootstrap.csv,method=RiskFit,ok,True
+GUIDE text: bootstrap D20 recall,.926--.993,.926--.993,guide/gate80_cluster_bootstrap.csv,method=Decisions + 20 ex.,ok,True
+GUIDE text: bootstrap D20 FE,47--137,47--137,guide/gate80_cluster_bootstrap.csv,method=Decisions + 20 ex.,ok,True
+Production text: local misses and FE,the local classifiers missed 7 to 16 with 2 to 28 false escalations,the local classifiers missed 7 to 16 with 2 to 28 false escalations,production/gate80_workflow.csv,,ok,True
+Production text: Gemini confidence values,at most six distinct values per fold,at most six distinct values per fold,data:facts.csv,quantity=Gemini 2.5 Pro distinct verbalized confidence values per fold (maximum),ok,True
+Production text: seven seeds RiskFit misses,9.3 $\pm$ 2.0,9.3 $\pm$ 2.0,production/seeds_workflow.csv,seed=mean; arm=RiskFit,ok,True
+Production text: seven seeds RiskFit FE,16.0 $\pm$ 6.2,16.0 $\pm$ 6.2,production/seeds_workflow.csv,seed=mean; arm=RiskFit,ok,True
+Production text: seven seeds CE misses,9.3 $\pm$ 2.6,9.3 $\pm$ 2.6,production/seeds_workflow.csv,seed=mean; arm=CE-A100 (lambda=0),ok,True
+Production text: seven seeds CE FE,11.3 $\pm$ 3.4,11.3 $\pm$ 3.4,production/seeds_workflow.csv,seed=mean; arm=CE-A100 (lambda=0),ok,True
+Production text: RiskFit seed ranges,(range 5--11) with 16.0 $\pm$ 6.2 false escalations (9--28),(range 5--11) with 16.0 $\pm$ 6.2 false escalations (9--28),production/seeds_workflow.csv,,ok,True
+Noise reduction: GUIDE,69--80\% of non-malicious GUIDE prompts against 63\%,69--80\% of non-malicious GUIDE prompts against 63\%,noise_reduction.csv,,ok,True
+Noise reduction: production,78--82\% of non-malicious production alerts against 69\%,78--82\% of non-malicious production alerts against 69\%,noise_reduction.csv,,ok,True
+Noise reduction: GUIDE recall,(.967--.976 against .974),(.967--.976 against .974),guide/gate80_workflow.csv,,ok,True
+Confidence ranking: RiskFit per tenant,"from 91.0\% to 96.1\% on tenant A, from 75.1\% to 79.7\% on tenant B and from 95.4\% to 99.7\% on tenant C","from 91.0\% to 96.1\% on tenant A, from 75.1\% to 79.7\% on tenant B and from 95.4\% to 99.7\% on tenant C",production/confidence_ranking.csv,,ok,True
+Confidence ranking: Gemini tenant B,"(51.3\% at full coverage, 50.5\% at 80\%)","(51.3\% at full coverage, 50.5\% at 80\%)",production/confidence_ranking.csv,method=Gemini + exemplar; tenant=B,ok,True
+Weighted cost: production crossover RiskFit,above about 14,above about 14,data:one_to_one_vs_decisions_exemplar.csv,gate=test-quantile 80%; condition=unperturbed; method=RiskFit; versus=Decisions + exemplar,ok,True
+Weighted cost: production crossover CE,above about 16,above about 16,data:one_to_one_vs_decisions_exemplar.csv,gate=test-quantile 80%; condition=unperturbed; method=CE; versus=Decisions + exemplar,ok,True
+Weighted cost: production crossover MaxSim,above about 21,above about 21,data:one_to_one_vs_decisions_exemplar.csv,gate=test-quantile 80%; condition=unperturbed; method=MaxSim; versus=Decisions + exemplar,ok,True
+Weighted cost: MaxSim crossover interval,11--71,11--71,data:one_to_one_vs_decisions_exemplar.csv,gate=test-quantile 80%; condition=unperturbed; method=MaxSim; versus=Decisions + exemplar,ok,True
+Weighted cost: GUIDE dominance,RiskFit and Tiny Decision have no more misses and fewer false escalations,RiskFit and Tiny Decision have no more misses and fewer false escalations,guide/gate80_workflow.csv,,ok,True
+Weighted cost: GUIDE CE crossover,$c\approx18$,$c\approx18$,guide/gate80_workflow.csv,,ok,True
+Sweep: hosted <=1 ex. and Jev + 20 ex. FE floor,made at least 120 false escalations,made at least 120 false escalations,guide/coverage_sweep.csv,,ok,True
+Sweep: D20 FE range,Decisions with 20 exemplars made 48 to 126,Decisions with 20 exemplars made 48 to 126,guide/coverage_sweep.csv,,ok,True
+Sweep: local FE range,the three local classifiers made 5 to 79,the three local classifiers made 5 to 79,guide/coverage_sweep.csv,,ok,True
+Sweep: misses at 90%,(at 90\%: 12 and 14 against 16 to 22),(at 90\%: 12 and 14 against 16 to 22),guide/coverage_sweep.csv,,ok,True
+Sweep: full coverage RiskFit,25 with 79,25 with 79,guide/coverage_sweep.csv,method=RiskFit; target_coverage=1.0000,ok,True
+Sweep: full coverage CE,27 with 70,27 with 70,guide/coverage_sweep.csv,method=CE; target_coverage=1.0000,ok,True
+Sweep: full coverage Tiny Decision,33 with 50,33 with 50,guide/coverage_sweep.csv,method=Tiny Decision; target_coverage=1.0000,ok,True
+Sweep: full coverage Decisions + 20 ex.,22 with 126,22 with 126,guide/coverage_sweep.csv,method=Decisions + 20 ex.; target_coverage=1.0000,ok,True
+Sweep: full coverage Decisions + 1 ex.,24 with 500,24 with 500,guide/coverage_sweep.csv,method=Decisions + 1 ex.; target_coverage=1.0000,ok,True
+Production full coverage: Decisions + ex.,2 of 73 with 213,2 of 73 with 213,production/default_verdicts_workflow.csv,method=Decisions + exemplar; scope=all,ok,True
+Production full coverage: RiskFit,17 with 64,17 with 64,production/default_verdicts_workflow.csv,method=RiskFit; scope=all,ok,True
+Production full coverage: CE,CE 22 with 36,CE 22 with 36,production/default_verdicts_workflow.csv,method=CE; scope=all,ok,True
+Table 3 GUIDE RiskFit automation_rate,79.3\%,79.3\%,guide/validation_deferral_gate.csv,method=RiskFit,ok,True
+Table 3 GUIDE RiskFit misses,12,12,guide/validation_deferral_gate.csv,method=RiskFit,ok,True
+Table 3 GUIDE RiskFit false_esc,47,47,guide/validation_deferral_gate.csv,method=RiskFit,ok,True
+Table 3 GUIDE RiskFit workflow_precision,.904,.904,guide/validation_deferral_gate.csv,method=RiskFit,ok,True
+Table 3 GUIDE RiskFit workflow_recall,.974,.974,guide/validation_deferral_gate.csv,method=RiskFit,ok,True
+Table 3 GUIDE CE automation_rate,80.2\%,80.2\%,guide/validation_deferral_gate.csv,method=CE,ok,True
+Table 3 GUIDE CE misses,15,15,guide/validation_deferral_gate.csv,method=CE,ok,True
+Table 3 GUIDE CE false_esc,33,33,guide/validation_deferral_gate.csv,method=CE,ok,True
+Table 3 GUIDE CE workflow_precision,.930,.930,guide/validation_deferral_gate.csv,method=CE,ok,True
+Table 3 GUIDE CE workflow_recall,.967,.967,guide/validation_deferral_gate.csv,method=CE,ok,True
+Table 3 GUIDE Tiny Decision automation_rate,80.4\%,80.4\%,guide/validation_deferral_gate.csv,method=Tiny Decision,ok,True
+Table 3 GUIDE Tiny Decision misses,13,13,guide/validation_deferral_gate.csv,method=Tiny Decision,ok,True
+Table 3 GUIDE Tiny Decision false_esc,33,33,guide/validation_deferral_gate.csv,method=Tiny Decision,ok,True
+Table 3 GUIDE Tiny Decision workflow_precision,.931,.931,guide/validation_deferral_gate.csv,method=Tiny Decision,ok,True
+Table 3 GUIDE Tiny Decision workflow_recall,.971,.971,guide/validation_deferral_gate.csv,method=Tiny Decision,ok,True
+Table 3 GUIDE Decisions + 1 ex. automation_rate,81.0\%,81.0\%,guide/validation_deferral_gate.csv,method=Decisions + 1 ex.,ok,True
+Table 3 GUIDE Decisions + 1 ex. misses,10,10,guide/validation_deferral_gate.csv,method=Decisions + 1 ex.,ok,True
+Table 3 GUIDE Decisions + 1 ex. false_esc,416,416,guide/validation_deferral_gate.csv,method=Decisions + 1 ex.,ok,True
+Table 3 GUIDE Decisions + 1 ex. workflow_precision,.517,.517,guide/validation_deferral_gate.csv,method=Decisions + 1 ex.,ok,True
+Table 3 GUIDE Decisions + 1 ex. workflow_recall,.978,.978,guide/validation_deferral_gate.csv,method=Decisions + 1 ex.,ok,True
+Table 3 GUIDE Decisions + 20 ex. automation_rate,79.6\%,79.6\%,guide/validation_deferral_gate.csv,method=Decisions + 20 ex.,ok,True
+Table 3 GUIDE Decisions + 20 ex. misses,11,11,guide/validation_deferral_gate.csv,method=Decisions + 20 ex.,ok,True
+Table 3 GUIDE Decisions + 20 ex. false_esc,87,87,guide/validation_deferral_gate.csv,method=Decisions + 20 ex.,ok,True
+Table 3 GUIDE Decisions + 20 ex. workflow_precision,.836,.836,guide/validation_deferral_gate.csv,method=Decisions + 20 ex.,ok,True
+Table 3 GUIDE Decisions + 20 ex. workflow_recall,.976,.976,guide/validation_deferral_gate.csv,method=Decisions + 20 ex.,ok,True
+Table 3 GUIDE Jev + 20 ex. automation_rate,83.5\%,83.5\%,guide/validation_deferral_gate.csv,method=Jev + 20 ex.,ok,True
+Table 3 GUIDE Jev + 20 ex. misses,31,31,guide/validation_deferral_gate.csv,method=Jev + 20 ex.,ok,True
+Table 3 GUIDE Jev + 20 ex. false_esc,223,223,guide/validation_deferral_gate.csv,method=Jev + 20 ex.,ok,True
+Table 3 GUIDE Jev + 20 ex. workflow_precision,.656,.656,guide/validation_deferral_gate.csv,method=Jev + 20 ex.,ok,True
+Table 3 GUIDE Jev + 20 ex. workflow_recall,.932,.932,guide/validation_deferral_gate.csv,method=Jev + 20 ex.,ok,True
+Table 3 production RiskFit automation_rate,74.5\%,74.5\%,production/validation_deferral_gate.csv,method=RiskFit; scope=all,ok,True
+Table 3 production RiskFit misses,6,6,production/validation_deferral_gate.csv,method=RiskFit; scope=all,ok,True
+Table 3 production RiskFit false_esc,26,26,production/validation_deferral_gate.csv,method=RiskFit; scope=all,ok,True
+Table 3 production RiskFit workflow_precision,.720,.720,production/validation_deferral_gate.csv,method=RiskFit; scope=all,ok,True
+Table 3 production RiskFit workflow_recall,.918,.918,production/validation_deferral_gate.csv,method=RiskFit; scope=all,ok,True
+Table 3 production CE automation_rate,77.9\%,77.9\%,production/validation_deferral_gate.csv,method=CE; scope=all,ok,True
+Table 3 production CE misses,9,9,production/validation_deferral_gate.csv,method=CE; scope=all,ok,True
+Table 3 production CE false_esc,8,8,production/validation_deferral_gate.csv,method=CE; scope=all,ok,True
+Table 3 production CE workflow_precision,.889,.889,production/validation_deferral_gate.csv,method=CE; scope=all,ok,True
+Table 3 production CE workflow_recall,.877,.877,production/validation_deferral_gate.csv,method=CE; scope=all,ok,True
+Table 3 production MaxSim automation_rate,78.7\%,78.7\%,production/validation_deferral_gate.csv,method=MaxSim; scope=all,ok,True
+Table 3 production MaxSim misses,7,7,production/validation_deferral_gate.csv,method=MaxSim; scope=all,ok,True
+Table 3 production MaxSim false_esc,4,4,production/validation_deferral_gate.csv,method=MaxSim; scope=all,ok,True
+Table 3 production MaxSim workflow_precision,.943,.943,production/validation_deferral_gate.csv,method=MaxSim; scope=all,ok,True
+Table 3 production MaxSim workflow_recall,.904,.904,production/validation_deferral_gate.csv,method=MaxSim; scope=all,ok,True
+Table 3 production LightGBM automation_rate,77.5\%,77.5\%,production/validation_deferral_gate.csv,method=LightGBM; scope=all,ok,True
+Table 3 production LightGBM misses,14,14,production/validation_deferral_gate.csv,method=LightGBM; scope=all,ok,True
+Table 3 production LightGBM false_esc,4,4,production/validation_deferral_gate.csv,method=LightGBM; scope=all,ok,True
+Table 3 production LightGBM workflow_precision,.937,.937,production/validation_deferral_gate.csv,method=LightGBM; scope=all,ok,True
+Table 3 production LightGBM workflow_recall,.808,.808,production/validation_deferral_gate.csv,method=LightGBM; scope=all,ok,True
+Table 3 production Decisions + exemplar automation_rate,81.7\%,81.7\%,production/validation_deferral_gate.csv,method=Decisions + exemplar; scope=all,ok,True
+Table 3 production Decisions + exemplar misses,0,0,production/validation_deferral_gate.csv,method=Decisions + exemplar; scope=all,ok,True
+Table 3 production Decisions + exemplar false_esc,155,155,production/validation_deferral_gate.csv,method=Decisions + exemplar; scope=all,ok,True
+Table 3 production Decisions + exemplar workflow_precision,.320,.320,production/validation_deferral_gate.csv,method=Decisions + exemplar; scope=all,ok,True
+Table 3 production Decisions + exemplar workflow_recall,1.000,1.000,production/validation_deferral_gate.csv,method=Decisions + exemplar; scope=all,ok,True
+Table 3 later tenant A RiskFit automation_rate,20.1\%,20.1\%,production/later_tenant_a_workflow.csv,method=RiskFit; gate=deployable (tau at 80% validation coverage),ok,True
+Table 3 later tenant A RiskFit misses,2,2,production/later_tenant_a_workflow.csv,method=RiskFit; gate=deployable (tau at 80% validation coverage),ok,True
+Table 3 later tenant A RiskFit false_esc,0,0,production/later_tenant_a_workflow.csv,method=RiskFit; gate=deployable (tau at 80% validation coverage),ok,True
+Table 3 later tenant A RiskFit workflow_precision,1.000,1.000,production/later_tenant_a_workflow.csv,method=RiskFit; gate=deployable (tau at 80% validation coverage),ok,True
+Table 3 later tenant A RiskFit workflow_recall,.818,.818,production/later_tenant_a_workflow.csv,method=RiskFit; gate=deployable (tau at 80% validation coverage),ok,True
+Table 3 later tenant A CE automation_rate,15.2\%,15.2\%,production/later_tenant_a_workflow.csv,method=CE; gate=deployable (tau at 80% validation coverage),ok,True
+Table 3 later tenant A CE misses,1,1,production/later_tenant_a_workflow.csv,method=CE; gate=deployable (tau at 80% validation coverage),ok,True
+Table 3 later tenant A CE false_esc,2,2,production/later_tenant_a_workflow.csv,method=CE; gate=deployable (tau at 80% validation coverage),ok,True
+Table 3 later tenant A CE workflow_precision,.833,.833,production/later_tenant_a_workflow.csv,method=CE; gate=deployable (tau at 80% validation coverage),ok,True
+Table 3 later tenant A CE workflow_recall,.909,.909,production/later_tenant_a_workflow.csv,method=CE; gate=deployable (tau at 80% validation coverage),ok,True
+Table 3 later tenant A LightGBM automation_rate,71.8\%,71.8\%,production/later_tenant_a_workflow.csv,method=LightGBM; gate=deployable (tau at 80% validation coverage),ok,True
+Table 3 later tenant A LightGBM misses,2,2,production/later_tenant_a_workflow.csv,method=LightGBM; gate=deployable (tau at 80% validation coverage),ok,True
+Table 3 later tenant A LightGBM false_esc,0,0,production/later_tenant_a_workflow.csv,method=LightGBM; gate=deployable (tau at 80% validation coverage),ok,True
+Table 3 later tenant A LightGBM workflow_precision,1.000,1.000,production/later_tenant_a_workflow.csv,method=LightGBM; gate=deployable (tau at 80% validation coverage),ok,True
+Table 3 later tenant A LightGBM workflow_recall,.818,.818,production/later_tenant_a_workflow.csv,method=LightGBM; gate=deployable (tau at 80% validation coverage),ok,True
+Table 3 later tenant A Decisions + exemplar automation_rate,39.0\%,39.0\%,production/later_tenant_a_workflow.csv,method=Decisions + exemplar; gate=deployable (tau at 80% validation coverage),ok,True
+Table 3 later tenant A Decisions + exemplar misses,0,0,production/later_tenant_a_workflow.csv,method=Decisions + exemplar; gate=deployable (tau at 80% validation coverage),ok,True
+Table 3 later tenant A Decisions + exemplar false_esc,20,20,production/later_tenant_a_workflow.csv,method=Decisions + exemplar; gate=deployable (tau at 80% validation coverage),ok,True
+Table 3 later tenant A Decisions + exemplar workflow_precision,.355,.355,production/later_tenant_a_workflow.csv,method=Decisions + exemplar; gate=deployable (tau at 80% validation coverage),ok,True
+Table 3 later tenant A Decisions + exemplar workflow_recall,1.000,1.000,production/later_tenant_a_workflow.csv,method=Decisions + exemplar; gate=deployable (tau at 80% validation coverage),ok,True
+Table 3 later tenant A Decisions zero-shot automation_rate,92.8\%,92.8\%,production/later_tenant_a_workflow.csv,method=Decisions zero-shot; gate=deployable (tau at 80% validation coverage),ok,True
+Table 3 later tenant A Decisions zero-shot misses,0,0,production/later_tenant_a_workflow.csv,method=Decisions zero-shot; gate=deployable (tau at 80% validation coverage),ok,True
+Table 3 later tenant A Decisions zero-shot false_esc,268,268,production/later_tenant_a_workflow.csv,method=Decisions zero-shot; gate=deployable (tau at 80% validation coverage),ok,True
+Table 3 later tenant A Decisions zero-shot workflow_precision,.039,.039,production/later_tenant_a_workflow.csv,method=Decisions zero-shot; gate=deployable (tau at 80% validation coverage),ok,True
+Table 3 later tenant A Decisions zero-shot workflow_recall,1.000,1.000,production/later_tenant_a_workflow.csv,method=Decisions zero-shot; gate=deployable (tau at 80% validation coverage),ok,True
+Table 3 text: pooled automation ranges,"(78--84\% on GUIDE, 74.5--84.5\% on production)","(78--84\% on GUIDE, 74.5--84.5\% on production)",guide/validation_deferral_gate.csv,,ok,True
+Table 3 text: GUIDE organization-level automation,ranged from 60\% to 98\%,ranged from 60\% to 98\%,guide/validation_deferral_gate.csv,,ok,True
+Table 3 text: later alerts automation,"15\% (CE), 20\% (RiskFit), 39\% (Decisions + 1 exemplar), 72\% (LightGBM) and 93\% (zero-shot Decisions)","15\% (CE), 20\% (RiskFit), 39\% (Decisions + 1 exemplar), 72\% (LightGBM) and 93\% (zero-shot Decisions)",production/later_tenant_a_workflow.csv,,ok,True
+Later alerts: RiskFit at 80%,RiskFit missed 2 of 11 with 1 false escalation,RiskFit missed 2 of 11 with 1 false escalation,production/later_tenant_a_workflow.csv,method=RiskFit; gate=test-quantile 80%,ok,True
+Later alerts: LightGBM and CE at 80%,"LightGBM 2 with 0, CE 2 with 28","LightGBM 2 with 0, CE 2 with 28",production/later_tenant_a_workflow.csv,,ok,True
+Later alerts: Decisions + ex. at 80%,1 with 56,1 with 56,production/later_tenant_a_workflow.csv,method=Decisions + exemplar; gate=test-quantile 80%,ok,True
+Later alerts: API FE rate on later alerts,0.18 on the later alerts,0.18 on the later alerts,data:later_alerts_tenantA_full_coverage.csv,method=Decisions + exemplar,ok,True
+Later alerts: no retrieved exemplar,66\% of the later alerts had no retrieved exemplar above the similarity threshold (38\% before),66\% of the later alerts had no retrieved exemplar above the similarity threshold (38\% before),data:facts.csv,,ok,True
+Later alerts: tenant C export,"RiskFit falsely escalated 295 of 1,034","RiskFit falsely escalated 295 of 1,034",data:later_alerts_local_models.csv,,ok,True
+"Full automation: Holm p (RiskFit, CE vs D20)",$p{\ge}0.39$,$p{\ge}0.39$,guide/validation_fpr_threshold_tests.csv,,ok,True
+Full automation: 5% FPR lowers recall,a fixed 5\% validation FPR lowered recall for every method,a fixed 5\% validation FPR lowered recall for every method,guide/validation_fpr_thresholds.csv,,ok,True
+Incident weighting: automated incidents RiskFit,83.6\% for RiskFit,83.6\% for RiskFit,guide/incident_weighted.csv,method=RiskFit; coverage=0.8000,ok,True
+Incident weighting: automated incidents CE,72.7\% for CE,72.7\% for CE,guide/incident_weighted.csv,method=CE; coverage=0.8000,ok,True
+Incident weighting: automated incidents Decisions + 20 ex.,68.0\% for Decisions + 20 exemplars,68.0\% for Decisions + 20 exemplars,guide/incident_weighted.csv,method=Decisions + 20 ex.; coverage=0.8000,ok,True
+Incident weighting: RiskFit missed,"26 of 4,259","26 of 4,259",guide/incident_weighted.csv,method=RiskFit; coverage=0.8000,ok,True
+Incident weighting: CE missed,and CE 30,and CE 30,guide/incident_weighted.csv,method=CE; coverage=0.8000,ok,True
+Incident weighting: D20 missed,535,535,guide/incident_weighted.csv,method=Decisions + 20 ex.; coverage=0.8000,ok,True
+Incident weighting: D20 single prompt,508,508,guide/incident_concentration.csv,quantity=Decisions + 20 ex.: malicious incidents missed via its single largest prompt,ok,True
+Incident weighting: D20 FE,"188 of 5,463","188 of 5,463",guide/incident_weighted.csv,method=Decisions + 20 ex.; coverage=0.8000,ok,True
+Incident weighting: RiskFit FE,581 for RiskFit,581 for RiskFit,guide/incident_weighted.csv,method=RiskFit; coverage=0.8000,ok,True
+Incident weighting: CE FE,363 for CE,363 for CE,guide/incident_weighted.csv,method=CE; coverage=0.8000,ok,True
+Incident weighting: largest prompt,"anywhere from one to 1,317","anywhere from one to 1,317",guide/incident_concentration.csv,quantity=largest test prompt (incidents),ok,True
+Duplicates: subset size,280 test alerts with no training neighbor above cosine similarity 0.95 (37 malicious),280 test alerts with no training neighbor above cosine similarity 0.95 (37 malicious),data:non_duplicate_subset.csv,subset=non-duplicate: max cos < 0.95; method=RiskFit,ok,True
+Duplicates: RiskFit at the gate,RiskFit made 4 misses with 7,RiskFit made 4 misses with 7,data:non_duplicate_subset.csv,subset=non-duplicate: max cos < 0.95; method=RiskFit,ok,True
+Duplicates: CE at the gate,CE 3 with 1,CE 3 with 1,data:non_duplicate_subset.csv,subset=non-duplicate: max cos < 0.95; method=CE,ok,True
+Duplicates: Tiny Decision at the gate,Tiny Decision 5 with 1,Tiny Decision 5 with 1,data:non_duplicate_subset.csv,subset=non-duplicate: max cos < 0.95; method=Tiny Decision,ok,True
+Duplicates: Decisions + exemplar at the gate,one exemplar 0 with 66,one exemplar 0 with 66,data:non_duplicate_subset.csv,subset=non-duplicate: max cos < 0.95; method=Decisions + exemplar,ok,True
+Response field removed: RiskFit,9 to 8,9 to 8,data:evasion.csv,,ok,True
+Response field removed: CE,9 to 10,9 to 10,data:evasion.csv,,ok,True
+Response field removed: kNN (frozen),16 to 18,16 to 18,data:evasion.csv,,ok,True
+Response field removed: Decisions + exemplar,0 to 2,0 to 2,data:evasion.csv,,ok,True
+Table 4 balanced CE caught,47.3 $\pm$ 2.5,47.3 $\pm$ 2.5,production/hinge_by_sampling_seeds.csv,sampling=balanced; loss=CE,ok,True
+Table 4 balanced CE FE,27.0 $\pm$ 6.6,27.0 $\pm$ 6.6,production/hinge_by_sampling_seeds.csv,sampling=balanced; loss=CE,ok,True
+Table 4 balanced rho=0.9 lambda=2 caught,49.3 $\pm$ 3.5,49.3 $\pm$ 3.5,production/hinge_by_sampling_seeds.csv,sampling=balanced; loss=rho=0.9 lambda=2,ok,True
+Table 4 balanced rho=0.9 lambda=2 FE,31.3 $\pm$ 4.7,31.3 $\pm$ 4.7,production/hinge_by_sampling_seeds.csv,sampling=balanced; loss=rho=0.9 lambda=2,ok,True
+Table 4 natural CE caught,11.7 $\pm$ 0.6,11.7 $\pm$ 0.6,production/hinge_by_sampling_seeds.csv,sampling=natural; loss=CE,ok,True
+Table 4 natural CE FE,1.7 $\pm$ 1.5,1.7 $\pm$ 1.5,production/hinge_by_sampling_seeds.csv,sampling=natural; loss=CE,ok,True
+Table 4 natural rho=0.9 lambda=2 caught,46.0 $\pm$ 4.0,46.0 $\pm$ 4.0,production/hinge_by_sampling_seeds.csv,sampling=natural; loss=rho=0.9 lambda=2,ok,True
+Table 4 natural rho=0.9 lambda=2 FE,30.3 $\pm$ 13.1,30.3 $\pm$ 13.1,production/hinge_by_sampling_seeds.csv,sampling=natural; loss=rho=0.9 lambda=2,ok,True
+Hinge: natural-sampling seeds,"46, 50, 42","46, 50, 42",production/hinge_by_sampling_seeds.csv,sampling=natural; loss=rho=0.9 lambda=2,ok,True
+Hinge: stronger arm rho .95,45.3,45.3,production/hinge_by_sampling_seeds.csv,sampling=natural; loss=rho=0.95 lambda=5,ok,True
+Hinge: stronger arm rho .99,47.0,47.0,production/hinge_by_sampling_seeds.csv,sampling=natural; loss=rho=0.99 lambda=8,ok,True
+Hinge: additional FE,approximately 28.7 additional false escalations,approximately 28.7 additional false escalations,production/hinge_by_sampling_seeds.csv,,ok,True
+Hinge: training soft recall under balanced CE,from 0.36 to 0.99,from 0.36 to 0.99,data:hinge_by_sampling_activity.csv,sampling=balanced; loss=CE,ok,True
+Hinge: recall target sweep,test recall 0.72--0.74,test recall 0.72--0.74,data:recall_target_sweep_monotonicity.csv,,ok,True
+Hinge: seven seeds RiskFit - CE,RiskFit caught 0.6 more malicious alerts than CE on average and made 9 more false escalations,RiskFit caught 0.6 more malicious alerts than CE on average and made 9 more false escalations,data:seeds_riskfit_vs_ce_7seeds_tests.csv,,ok,True
+Limitations: small validation sets,"only 3, 4, 13 and 17 non-malicious validation prompts","only 3, 4, 13 and 17 non-malicious validation prompts",guide/task_label_conflicts.csv,,ok,True
+Limitations: malicious test prompts in those orgs,they hold 287 of the 456 malicious test prompts,they hold 287 of the 456 malicious test prompts,guide/task_label_conflicts.csv,,ok,True
+Reproducibility: Decisions repeat calls,"3,300 repeated production calls","3,300 repeated production calls",data:facts.csv,quantity=Decisions API repeat calls (production),ok,True
+Later alerts: API FE rate on the benchmark,0.045 on the benchmark,0.046 on the benchmark,data:default_verdicts.csv,method=Decisions + exemplar; scope=A,known issue: tenant A pooled counts give 18/395 = 0.0456 (0.046); no released file holds 0.045 (perhaps a fold mean),True

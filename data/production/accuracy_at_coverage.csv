@@ -1,0 +1,9 @@
+tenant,method,coverage,accuracy_of_automated_alerts
+A,RiskFit,1.00,0.910194
+A,RiskFit,0.80,0.960725
+B,RiskFit,1.00,0.751061
+B,RiskFit,0.80,0.796820
+C,RiskFit,1.00,0.954424
+C,RiskFit,0.80,0.996667
+B,Gemini + exemplar,1.00,0.513437
+B,Gemini + exemplar,0.80,0.505300

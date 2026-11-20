@@ -1,0 +1,19 @@
+method,workflow_recall,recall_lo,recall_hi,false_esc,fe_lo,fe_hi,workflow_precision,precision_lo,precision_hi,replicates,resampling_unit,seed
+RiskFit,0.9759,0.9481,0.9914,46,21,71,0.9063,0.8234,0.9617,2000,"organization (12, with replacement)",20261112
+CE,0.9671,0.9218,0.9905,35,15,56,0.9265,0.8672,0.9695,2000,"organization (12, with replacement)",20261112
+LightGBM,0.9320,0.8635,0.9690,39,17,63,0.9159,0.8361,0.9662,2000,"organization (12, with replacement)",20261112
+MaxSim,0.9167,0.7986,0.9768,17,5,31,0.9609,0.9240,0.9883,2000,"organization (12, with replacement)",20261112
+kNN,0.9539,0.9016,0.9830,28,14,42,0.9395,0.8990,0.9679,2000,"organization (12, with replacement)",20261112
+Tiny Decision,0.9737,0.9386,0.9909,30,15,46,0.9367,0.8917,0.9697,2000,"organization (12, with replacement)",20261112
+Decisions 0-shot,1.0000,1.0000,1.0000,497,237,851,0.4785,0.2626,0.7298,2000,"organization (12, with replacement)",20261112
+Decisions + 1 ex.,0.9825,0.9561,0.9960,420,191,744,0.5161,0.2847,0.7658,2000,"organization (12, with replacement)",20261112
+Decisions + 5 ex.,0.9474,0.8491,0.9880,109,54,179,0.7985,0.6052,0.9132,2000,"organization (12, with replacement)",20261112
+Decisions + 20 ex.,0.9737,0.9262,0.9934,90,47,137,0.8315,0.6816,0.9238,2000,"organization (12, with replacement)",20261112
+Jev 0-shot,0.9912,0.9746,1.0000,492,234,844,0.4788,0.2610,0.7318,2000,"organization (12, with replacement)",20261112
+Jev + 1 ex.,0.9408,0.8496,0.9817,381,161,714,0.5296,0.2782,0.7946,2000,"organization (12, with replacement)",20261112
+Jev + 5 ex.,0.9167,0.7795,0.9750,245,77,534,0.6305,0.3333,0.8832,2000,"organization (12, with replacement)",20261112
+Jev + 20 ex.,0.9364,0.8700,0.9710,213,57,478,0.6672,0.3757,0.9060,2000,"organization (12, with replacement)",20261112
+Opus 0-shot,0.9890,0.9668,1.0000,490,231,841,0.4793,0.2604,0.7320,2000,"organization (12, with replacement)",20261112
+Opus + 1 ex.,0.9649,0.9207,0.9848,241,93,483,0.6461,0.3842,0.8682,2000,"organization (12, with replacement)",20261112
+CyberSecQwen-4B,1.0000,1.0000,1.0000,502,245,855,0.4760,0.2618,0.7242,2000,"organization (12, with replacement)",20261112
+Qwen3-4B base,0.8706,0.7722,0.9236,437,195,787,0.4760,0.2430,0.7444,2000,"organization (12, with replacement)",20261112

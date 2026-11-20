@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this code or the released results, please cite the paper."
+title: "Local and Hosted Models for SOC Alert Triage Under Limited Human Review: code and released results"
+authors:
+  - family-names: Zimmer
+    given-names: Yaniv
+  - family-names: Goldberg
+    given-names: Yuval
+  - family-names: Cohen
+    given-names: Noam
+license: Apache-2.0
+repository-code: "https://github.com/torqio/soc-triage-research"
+preferred-citation:
+  type: unpublished
+  title: "Local and Hosted Models for SOC Alert Triage Under Limited Human Review"
+  authors:
+    - family-names: Zimmer
+      given-names: Yaniv
+    - family-names: Goldberg
+      given-names: Yuval
+    - family-names: Cohen
+      given-names: Noam

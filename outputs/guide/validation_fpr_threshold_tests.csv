@@ -1,0 +1,13 @@
+target,local,hosted,mean_recall_diff,orgs_local_higher,orgs_local_lower,orgs_tied,p_wilcoxon_exact,p_holm
+val FPR 5% (primary),RiskFit,Decisions + 1 ex.,0.4248,10,2,0,0.0068,0.0342
+val FPR 5% (primary),RiskFit,Decisions + 20 ex.,0.0535,5,4,3,0.8203,1.0000
+val FPR 5% (primary),RiskFit,Jev + 20 ex.,0.2690,9,3,0,0.0269,0.0806
+val FPR 5% (primary),CE,Decisions + 1 ex.,0.4433,11,1,0,0.0024,0.0146
+val FPR 5% (primary),CE,Decisions + 20 ex.,0.0721,6,4,2,0.6074,1.0000
+val FPR 5% (primary),CE,Jev + 20 ex.,0.2876,9,2,1,0.0186,0.0742
+RiskFit validation FPR (secondary),RiskFit,Decisions + 1 ex.,0.3002,10,0,2,0.0020,0.0117
+RiskFit validation FPR (secondary),RiskFit,Decisions + 20 ex.,0.0610,6,2,4,0.1953,0.3906
+RiskFit validation FPR (secondary),RiskFit,Jev + 20 ex.,0.2067,10,1,1,0.0068,0.0273
+RiskFit validation FPR (secondary),CE,Decisions + 1 ex.,0.2925,10,1,1,0.0029,0.0146
+RiskFit validation FPR (secondary),CE,Decisions + 20 ex.,0.0533,6,3,3,0.4062,0.4062
+RiskFit validation FPR (secondary),CE,Jev + 20 ex.,0.1990,10,1,1,0.0098,0.0293

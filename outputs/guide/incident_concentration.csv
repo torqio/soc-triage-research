@@ -1,0 +1,27 @@
+quantity,value
+test prompts,1079
+test incidents,9722
+test prompts with one incident,705
+largest test prompt (incidents),1317
+share of test incidents in the 11 largest test prompts (1%),0.5156
+RiskFit: automated non-malicious-verdict prompts holding malicious incidents,17
+RiskFit: malicious incidents missed at 80%,26
+RiskFit: malicious incidents missed via its single largest prompt,6
+CE: automated non-malicious-verdict prompts holding malicious incidents,22
+CE: malicious incidents missed at 80%,30
+CE: malicious incidents missed via its single largest prompt,4
+Tiny Decision: automated non-malicious-verdict prompts holding malicious incidents,22
+Tiny Decision: malicious incidents missed at 80%,33
+Tiny Decision: malicious incidents missed via its single largest prompt,4
+Decisions + 1 ex.: automated non-malicious-verdict prompts holding malicious incidents,9
+Decisions + 1 ex.: malicious incidents missed at 80%,17
+Decisions + 1 ex.: malicious incidents missed via its single largest prompt,4
+Decisions + 20 ex.: automated non-malicious-verdict prompts holding malicious incidents,18
+Decisions + 20 ex.: malicious incidents missed at 80%,535
+Decisions + 20 ex.: malicious incidents missed via its single largest prompt,508
+Jev + 20 ex.: automated non-malicious-verdict prompts holding malicious incidents,39
+Jev + 20 ex.: malicious incidents missed at 80%,995
+Jev + 20 ex.: malicious incidents missed via its single largest prompt,508
+Opus + 1 ex.: automated non-malicious-verdict prompts holding malicious incidents,21
+Opus + 1 ex.: malicious incidents missed at 80%,39
+Opus + 1 ex.: malicious incidents missed via its single largest prompt,5

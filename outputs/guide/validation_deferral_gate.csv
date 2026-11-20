@@ -1,0 +1,19 @@
+method,group,rule,n,n_mal,n_nonmal,automated,deferred,automation_rate,TP,FN,FP,TN,misses,false_esc,workflow_precision,workflow_recall,deferred_malicious,automation_min_org,automation_max_org,weighted_cost_c10
+RiskFit,local,tau at 80% validation coverage,1079,456,623,856,223,0.7933,444,12,47,576,12,47,0.9043,0.9737,80,0.6667,0.9444,167
+CE,local,tau at 80% validation coverage,1079,456,623,865,214,0.8017,441,15,33,590,15,33,0.9304,0.9671,88,0.7273,0.9222,183
+LightGBM,local,tau at 80% validation coverage,1079,456,623,866,213,0.8026,427,29,37,586,29,37,0.9203,0.9364,92,0.7083,0.8958,327
+MaxSim,local,tau at 80% validation coverage,1079,456,623,837,242,0.7757,428,28,16,607,28,16,0.9640,0.9386,129,0.7083,0.8556,296
+kNN,local,tau at 80% validation coverage,1079,456,623,911,168,0.8443,436,20,30,593,20,30,0.9356,0.9561,79,0.6792,0.9836,230
+Tiny Decision,local,tau at 80% validation coverage,1079,456,623,867,212,0.8035,443,13,33,590,13,33,0.9307,0.9715,92,0.6415,0.8958,163
+Decisions 0-shot,hosted classification API,tau at 80% validation coverage,1079,456,623,874,205,0.8100,456,0,501,122,0,501,0.4765,1.0000,83,0.6875,0.9623,501
+Decisions + 1 ex.,hosted classification API,tau at 80% validation coverage,1079,456,623,874,205,0.8100,446,10,416,207,10,416,0.5174,0.9781,65,0.7000,0.8846,516
+Decisions + 5 ex.,hosted classification API,tau at 80% validation coverage,1079,456,623,889,190,0.8239,429,27,109,514,27,109,0.7974,0.9408,54,0.7358,0.9146,379
+Decisions + 20 ex.,hosted classification API,tau at 80% validation coverage,1079,456,623,859,220,0.7961,445,11,87,536,11,87,0.8365,0.9759,69,0.7083,0.8590,197
+Jev 0-shot,hosted classification API,tau at 80% validation coverage,1079,456,623,888,191,0.8230,452,4,505,118,4,505,0.4723,0.9912,86,0.7111,0.8841,545
+Jev + 1 ex.,hosted classification API,tau at 80% validation coverage,1079,456,623,890,189,0.8248,428,28,395,228,28,395,0.5200,0.9386,68,0.7143,0.9375,675
+Jev + 5 ex.,hosted classification API,tau at 80% validation coverage,1079,456,623,894,185,0.8285,414,42,247,376,42,247,0.6263,0.9079,63,0.7708,0.9444,667
+Jev + 20 ex.,hosted classification API,tau at 80% validation coverage,1079,456,623,901,178,0.8350,425,31,223,400,31,223,0.6559,0.9320,60,0.6042,0.9167,533
+CyberSecQwen-4B,"prompted LLM (open, local)",tau at 80% validation coverage,1079,456,623,863,216,0.7998,456,0,501,122,0,501,0.4765,1.0000,94,0.6875,0.9434,501
+Qwen3-4B base,"prompted LLM (open, local)",tau at 80% validation coverage,1079,456,623,855,224,0.7924,397,59,433,190,59,433,0.4783,0.8706,91,0.7455,0.8750,1023
+Opus 0-shot,prompted LLM (hosted),omitted: no validation rows,,,,,,,,,,,,,,,,,,
+Opus + 1 ex.,prompted LLM (hosted),omitted: no validation rows,,,,,,,,,,,,,,,,,,
