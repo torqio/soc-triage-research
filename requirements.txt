@@ -1,0 +1,2 @@
+matplotlib==3.11.2
+anthropic==2.13.0
