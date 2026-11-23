@@ -12,7 +12,6 @@ from soctriage import paths
 
 GUIDE_ID = re.compile(r"^guide-(\d+)-p[0-9a-f]{16}$")
 ORGS = {r["org_id"] for r in csv.DictReader(paths.GUIDE_ORGS.open())}
-ALLOWED_EMAILS = {"yaniv.zimmer@torq.io"}  # the corresponding author's contact (README)
 
 _HOME = "/" + "Users/|/" + "home/|" + "C:" + r"\\Users"  # split so this file does not match itself
 LEAKS = {
@@ -97,7 +96,7 @@ class NoLeaks(unittest.TestCase):
             s = p.read_text(errors="ignore")
             rel = p.relative_to(paths.REPO)
             hits += [(str(rel), name, m.group()) for name, rx in LEAKS.items() for m in rx.finditer(s)]
-            hits += [(str(rel), "email", e) for e in EMAIL.findall(s) if e not in ALLOWED_EMAILS]
+            hits += [(str(rel), "email", e) for e in EMAIL.findall(s)]
         self.assertEqual(hits, [])
 
     def test_no_enrichment_provider_names(self):
