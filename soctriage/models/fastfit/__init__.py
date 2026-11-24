@@ -1,4 +1,7 @@
-"""Vendored FastFit (IBM, Apache-2.0) with the RiskFit objective; see modeling.py / train.py."""
+"""Vendored and modified copy of IBM FastFit (https://github.com/IBM/fastfit, Apache License 2.0).
+Modified by Torq Technologies Ltd.
+See modeling.py / train.py.
+"""
 
 
 def __getattr__(name):
