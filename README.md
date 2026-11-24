@@ -1,7 +1,7 @@
 # Local and Hosted Models for SOC Alert Triage Under Limited Human Review
 
 Code, released results and a one-command reproduction for the paper by Yaniv Zimmer, Yuval Goldberg and Noam
-Cohen (Torq). Contact: yaniv.zimmer@torq.io. The paper is
+Cohen (Torq). Pull requests are limited to repository collaborators. The paper is
 [`paper/local_hosted_soc_triage.pdf`](paper/local_hosted_soc_triage.pdf); its LaTeX source is in
 [`paper/source/`](paper/source/).
 
