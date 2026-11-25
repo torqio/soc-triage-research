@@ -124,7 +124,7 @@ tests/                  unit tests, end-to-end rerun, release rules
 
 ## Data and privacy
 
-Production alerts are private; the data owners permitted publication of aggregate results only. This repository
+Production alerts are private and are not released. This repository
 contains no production alert text, no per-alert labels or predictions, no customer identifiers, no collection
 timestamps, no customer system names, and no trained adapters. The production files are counts and rates per
 tenant (`A`, `B`, `C`) or pooled (`all`), including totals of malicious and benign alerts, plus tenant x fold x
