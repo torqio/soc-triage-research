@@ -25,8 +25,7 @@ An unresolved hosted call (empty verdict) counts as a non-malicious verdict with
 
 ## `production/`: private production alerts (aggregates only)
 
-1,492 analyst-reviewed alerts from three anonymized tenants (A, B, C). The data owners permitted publication of
-aggregate results only: every file is per tenant or pooled (`all`); `units/` holds tenant x fold x seed counts
+1,492 analyst-reviewed alerts from three anonymized tenants (A, B, C). Production alerts are private and are not released. Every file is per tenant or pooled (`all`); `units/` holds tenant x fold x seed counts
 for the two experiments whose tests use those units. No alert text, labels, per-alert scores or identifiers.
 Counts are malicious alerts caught or missed and non-malicious alerts falsely escalated; cost = c x misses + FE.
 `CE` is the benchmark run on a T4 GPU; `CE-A100 (lambda=0)` is the paired run on RiskFit's hardware.
