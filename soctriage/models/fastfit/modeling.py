@@ -1,4 +1,5 @@
 # Vendored and modified copy of IBM FastFit (https://github.com/IBM/fastfit, Apache License 2.0).
+# Modified by Torq Technologies Ltd.
 # Modifications: LoRA-friendly encoder handling, Apple-Silicon (MPS) fixes, a classification-head
 # loss path with optional focal-Tversky, soft-recall hinge (RiskFit), soft false-positive penalty and
 # reward terms, and a malicious/non-malicious balanced batch sampler. See soctriage/models/fastfit_lora.py
